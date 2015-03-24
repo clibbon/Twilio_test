@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from test_project.settings import TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -36,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_twilio',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,3 +83,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+TWILIO_ACCOUNT_SID = "ACcfee309f80ba0ebcfcc720b7ad679669"
+TWILIO_AUTH_TOKEN = "3f9ab5b43309dda1cd431106166ef9be"

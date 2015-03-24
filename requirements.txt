@@ -7,3 +7,6 @@ psycopg2==2.5.3
 static3==0.5.1
 wsgiref==0.1.2
 twilio==3.7.3
+django-phonenumber-field==0.7.2
+django-twilio==0.8.0
+
